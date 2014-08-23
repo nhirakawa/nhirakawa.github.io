@@ -1,0 +1,99 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+/* nav */
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+nav li{
+	cursor: pointer;
+}
+
+nav li a{
+	font-size: 18pt;
+}
+
+i.fa{
+	line-height: 0 !important;
+}
+/* end nav*/
+
+.main{
+	margin-top: 100px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	height: 100%;
+}
+
+.enable{
+
+}
+
+.disable{
+	display: none;
+}
+
+/* about */
+
+.portrait{
+	width: 50%;
+	float: left;
+}
+
+.info{
+	width: 50%;
+	float: right;
+}
+
+.info .name-header{
+	margin-top: 0 !important;
+	margin-bottom: 5px;
+}
+
+.info > h3{
+	margin-bottom: 50px;
+	margin-top: 5px;
+	font-style: italic;
+}
+
+.info p{
+	font-size: 14pt;
+}
+
+/* end about */
+
+/* resume */
+#resume ul{
+	list-style: none;
+}
+/* end resume*/
+
+footer {
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	height: 40px;
+	text-align: center;
+	background-color: #222222;
+}
+
+footer h4{
+	color: #777777;
+}
+
+footer h4:hover{
+	cursor: default;
+	color: #ffffff
+}
