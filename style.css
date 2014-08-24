@@ -98,6 +98,10 @@ i.fa{
 	list-style: none;
 }
 
+#resume-content .list{
+	list-style: square;
+}
+
 #resume-content > ul > li{
 	clear: both;
 }
@@ -110,7 +114,7 @@ i.fa{
 	font-size: 13pt;
 }
 
-#resume-content > ul > li > div > div > div:last-child{
+#resume-content > ul > li > div > div:last-child{
 	margin-bottom: 25px;
 }
 
