@@ -2,6 +2,26 @@
 	font-family: 'Lato', sans-serif;
 }
 
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.column{
+	width: 50%;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
 /* nav */
 .navbar .navbar-nav {
 	display: inline-block;
@@ -32,6 +52,7 @@ i.fa{
 	margin-right: auto;
 	float: none;
 	height: 100%;
+	margin-bottom: 50px;
 }
 
 .enable{
@@ -72,9 +93,31 @@ i.fa{
 /* end about */
 
 /* resume */
-#resume ul{
+
+#resume-content ul{
 	list-style: none;
 }
+
+#resume-content .list{
+	list-style: square;
+}
+
+#resume-content > ul > li{
+	clear: both;
+}
+
+#resume-content *{
+	font-family: 'Arvo', serif;
+}
+
+#resume-content > ul > li > ul *, #resume-content > ul > li > div *{
+	font-size: 13pt;
+}
+
+#resume-content > ul > li > div > div:last-child{
+	margin-bottom: 25px;
+}
+
 /* end resume*/
 
 footer {
