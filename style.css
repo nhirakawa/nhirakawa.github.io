@@ -65,16 +65,6 @@ i.fa{
 
 /* about */
 
-.portrait{
-	width: 50%;
-	float: left;
-}
-
-.info{
-	width: 50%;
-	float: right;
-}
-
 .info .name-header{
 	margin-top: 0 !important;
 	margin-bottom: 5px;
