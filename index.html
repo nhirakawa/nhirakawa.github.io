@@ -11,6 +11,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
@@ -46,17 +47,19 @@
 			</nav>
 		</div>
 		<div class="container main enable" id="about-content">
-			<div class="portrait">
-				<a href="http://xkcd.com/148"><img src="http://imgs.xkcd.com/comics/mispronouncing.png" title="xkcd" /></a>
-			</div>
-			<div class="info">
-				<h2 class="name-header">Nick Hirakawa</h2>
-				<h3>Programmer / Web Developer / Software Engineer</h3>
-				<p>I currently work at Tyco Security Products in Westford, MA</p>
-				<p>My current stack (work and personal) is <b>Node.js/Express/Angular</b>, but I also do personal projects in <b>Python</b>.
-					I'm currently trying to learn Go, Scala, and other new languages.</p>
-				<p>My interests lie in <b>distributed systems</b>, <b>web development</b>, <b>networking</b>, <b>machine learning</b>, and <b>databases</b>.</p>
-				<p>If you'd like to reach me, click the Contact link at the top to send me an email.</p>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="http://xkcd.com/148"><img src="http://imgs.xkcd.com/comics/mispronouncing.png" title="xkcd" /></a>
+				</div>
+				<div class="col-md-6">
+					<h2 class="name-header">Nick Hirakawa</h2>
+					<h3>Programmer / Web Developer / Software Engineer</h3>
+					<p>I currently work at Tyco Security Products in Westford, MA</p>
+					<p>My current stack (work and personal) is <b>Node.js/Express/Angular</b>, but I also do personal projects in <b>Python</b>.
+						I'm currently trying to learn Go, Scala, and other new languages.</p>
+					<p>My interests lie in <b>distributed systems</b>, <b>web development</b>, <b>networking</b>, <b>machine learning</b>, and <b>databases</b>.</p>
+					<p>If you'd like to reach me, click the Contact link at the top to send me an email.</p>
+				</div>
 			</div>
 		</div>
 		<div class="container main disable" id="resume-content">
@@ -132,6 +135,15 @@
 								<li>Responsibilities: Cleaned and parsed multi-gigabyte dataset for database, helpted tune database for performance, created web frontend for database</li>
 								<li>Users can login to search and rate songs and playlists; admin users can perform queries on the databse</li>
 								<li>Used MySQL and PHP in backend, jQuery and Twitter Bootstrap in the frontend</li>
+							</ul>
+						</li>
+						<li>
+							<span class="bold">PySearch</span>, A Python based search engine<span class="right italic">January 2014 - Present</span>
+							<ul class="list">
+								<li>Combines multiple assignments over the course of my semester-long Search Engines class into a functional search engine</li>
+								<li>Uses BM25 ranking function</li>
+								<li>Users can enter queries and receive documents and scores</li>
+								<li>Uses MySQL for storing inverted index and document text, Django for serving static pages and calling search code, and Twitter Bootstrap and jQuery in frontend</li>
 							</ul>
 						</li>
 					</ul>
