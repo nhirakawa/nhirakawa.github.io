@@ -84,7 +84,7 @@ i.fa{
 
 /* resume */
 #resume{
-	overflow: auto;
+	overflow: scroll;
 }
 
 #resume-content ul{
