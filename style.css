@@ -83,6 +83,9 @@ i.fa{
 /* end about */
 
 /* resume */
+#resume{
+	overflow: auto;
+}
 
 #resume-content ul{
 	list-style: none;
