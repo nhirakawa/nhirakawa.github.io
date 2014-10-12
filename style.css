@@ -2,6 +2,15 @@
 	font-family: 'Lato', sans-serif;
 }
 
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	overflow: hidden;
+}
+
 .left{
 	float: left;
 }
@@ -83,6 +92,11 @@ i.fa{
 /* end about */
 
 /* resume */
+
+#resume-content{
+	overflow-y: auto;
+	max-height: 800px;
+}
 
 #resume-content ul{
 	list-style: none;
