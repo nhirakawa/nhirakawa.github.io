@@ -4,18 +4,20 @@
 		<meta charset="UTF-8">
 		<title>Nick Hirakawa</title>
 		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="script.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-route.min.js"></script>
+		<script src="client.js"></script>
 	</head>
-	<body>
+	<body ng-app="nh0815">
 		<!--<nav class='navbar navbar-inverse navbar-fixed-top' id='navbar' role='navigation'>
 			<div class='container-fluid'>
 				<ul class='nav navbar-nav'>
@@ -39,144 +41,15 @@
 				</div>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
-						<li><a id="about">Nick Hirakawa</a></li>
-						<li><a id="resume"><i class="fa fa-file-text-o"></i> Résumé</a></li>
+						<li><a href="#/about" id="about">Nick Hirakawa</a></li>
+						<li><a href="#/resume" id="resume"><i class="fa fa-file-text-o"></i> Résumé</a></li>
 						<li><a href="https://github.com/nh0815?tab=repositories"><i class="fa fa-github"></i> GitHub</a></li>
 						<li><a href="mailto:nh0815@gmail.com"><i class="fa fa-envelope-o"></i> Contact</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
-		<div class="container main enable" id="about-content">
-			<div class="row">
-				<div class="col-md-6">
-					<a href="http://xkcd.com/148"><img src="http://imgs.xkcd.com/comics/mispronouncing.png" title="xkcd" /></a>
-				</div>
-				<div class="col-md-6">
-					<h2 class="name-header">Nick Hirakawa</h2>
-					<h3>Programmer / Web Developer / Software Engineer</h3>
-					<p>I currently work at Tyco Security Products in Westford, MA</p>
-					<p>My current stack (work and personal) is <b>Node.js/Express/Angular</b>, but I also do personal projects in <b>Python</b>.
-						I'm currently trying to learn Go, Scala, and other new languages.</p>
-					<p>My interests lie in <b>distributed systems</b>, <b>web development</b>, <b>networking</b>, <b>machine learning</b>, <b>databases</b>, and <b>information retrieval</b>.</p>
-					<p>If you'd like to reach me, click the Contact link at the top to send me an email.</p>
-				</div>
-			</div>
-		</div>
-		<div class="container main disable" id="resume-content">
-			<ul>
-				<li>
-					<h3>Education</h3><hr>
-					<ul>
-						<li><span class="bold">B.S. Computer Science</span><span class="right italic">Graduated: May 2014</span></li>
-						<li><span class="italic">University of Massachusetts, Amherst</span>, Amherst, MA</li>
-						<li>Cumulative GPA 3.34</li>
-					</ul>
-				</li>
-				<li>
-					<h3>Coursework</h3><hr>
-					<ul>
-						<li>
-							<ul class="left column list" style="padding-left: 0px">
-								<li>Data Structures</li>
-								<li>Introduction to Algorithms</li>
-								<li>Intro to Software Engineering</li>
-								<li>Computer Networks</li>
-								<li>Artificial Intelligence</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="right column list" style="padding-left: 0px">
-								<li>Operating Systems</li>
-								<li>Web Programming</li>
-								<li>Information Systems</li>
-								<li>Search Engines</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li style="padding-top: 20px">
-					<h3>Skills</h3><hr>
-					<ul class="list">
-						<li>
-							<span class=" bold">Programming Languages:</span><br>
-							<ul class="list">
-								<li>Proficient: JavaScript, HTML5/CSS, Python, Java</li>
-								<li>Familiar: C/C++, C#</li>
-							</ul>
-						</li>
-						<li><span class=" bold">Operating Systems:</span> Linux (Ubuntu/Debian, Fedora, SLES, Arch), Windows 7</li>
-						<li><span class=" bold">Frameworks:</span> Node.js/Express, Angular.js, jQuery, Twitter Bootstrap, Android</li>
-						<li><span class=" bold">Tools:</span> WebStorm, Sublime Text, Wireshark, valgrind, Make, TFS, git, npm, bower, Firefox, Chrome, Internet Explorer 11</li>
-						<li><span class=" bold">Databases:</span> CouchDB, mongoDB, MySQL</li>
-					</ul>
-				</li>
-				<li>
-					<h3>Projects</h3><hr>
-					<ul class="list">
-						<li>
-							<span class="bold">Gea</span>, A location-aware music streaming app<span class="right italic">January - May 2013</span>
-							<ul class="list">
-								<li>Responsibilities: Sending/retrieving ratings to/from project server for Android platform, general documentation, general design and project goals</li>
-								<li>Users stream music from existing service (Rdio) and submit location-based (state level) ratings using web or Android client</li>
-								<li>Used Node.js and Express for REST API, PostgreSQL for database, web browser (Firefox and Chrome) and Android clients</li>
-							</ul>
-						</li>
-						<li>
-							<span class="bold">ShareNinja</span>, A social file sharing website<span class="right italic">September - December 2013</span>
-							<ul class="list">
-								<li>Responsibilities: Oversaw system architecture and git repository, handle file uploads/downloads and storage, wrote various mongoDB queries, general documentation</li>
-								<li>Users can upload and download files, share files with friends, and chat on a forum</li>
-								<li>Used Node.js and Express for REST API, socket.io for real time notifications, and mongoDB for database</li>
-							</ul>
-						</li>
-						<li>
-							<span class="bold">MusicNet</span>, A music-based social network<span class="right italic">January - May 2014</span>
-							<ul class="list">
-								<li>Responsibilities: Cleaned and parsed multi-gigabyte dataset for database, helped tune database for performance, created web frontend for database</li>
-								<li>Users can login to search and rate songs and playlists; admin users can perform queries on the database</li>
-								<li>Used MySQL and PHP in backend, jQuery and Twitter Bootstrap in the frontend</li>
-							</ul>
-						</li>
-						<li>
-							<span class="bold">PySearch</span>, A Python based search engine<span class="right italic">January 2014 - Present</span>
-							<ul class="list">
-								<li>Combines multiple assignments over the course of my semester-long Search Engines class into a functional search engine</li>
-								<li>Uses BM25 ranking function</li>
-								<li>Users can enter queries and receive documents and scores</li>
-								<li>Uses MySQL for storing inverted index and document text, Django for serving static pages and calling search code, and Twitter Bootstrap and jQuery in frontend</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<h3>Work Experience</h3><hr>
-					<ul>
-						<li class="bold">Software Engineer I</li>
-						<li>Tyco Security Products<span class="right italic">June 2014 - Present</span></li>
-						<li>Westford, MA</li>
-						<ul class="list">
-							<li>Implemented various features in a thin web client for network video recorder on both server and client side</li>
-							<li>Work with members of QA team to resolve bugs and plan features</li>
-							<li>Used Node.js and CouchDB in web backend, Angular.js in frontend</li>
-						</ul>
-					</ul>
-					<ul>
-						<li class="bold">Quality Assurance Intern</li>
-						<li>Tyco Security Products<span class="right italic">June 2013 - August 2013</span></li>
-						<li>Westford, MA</li>
-						<ul class="list">
-							<li>Assist QA engineers with assembling and configuring VideoEdge network video recording systems</li>
-							<li>Planned, created, and executed test cases involving network performance, failover, and POS text streaming</li>
-							<li>Worked with members of development team in diagnosing and resolving problems</li>
-						</ul>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<footer>
-			<h4>&copy; 2015 Nick Hirakawa</h4>
-		</footer>
+		<div ng-view>
+		<footer><h4>&copy; 2015 Nick Hirakawa</h4></footer>
 	</body>
 </html>
