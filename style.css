@@ -124,6 +124,7 @@ i.fa{
 
 /* end resume*/
 
+/* footer */
 footer {
 	position:fixed;
 	bottom:0;
@@ -144,3 +145,12 @@ footer h4:hover{
 	cursor: default;
 	color: #ffffff
 }
+/* end footer */
+
+/* animations */
+
+.view-animate {
+	transition: all cubic-bezier (0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+
+/* end animations */
