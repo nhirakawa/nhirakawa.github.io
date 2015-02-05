@@ -1,5 +1,6 @@
 var app = angular.module('nh0815', [
-	'ngRoute'
+	'ngRoute',
+	'ngAnimate'
 ]);
 
 app.config([ '$routeProvider',
