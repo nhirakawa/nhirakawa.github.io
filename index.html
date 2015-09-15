@@ -19,27 +19,25 @@
 		<script src="client.js"></script>
 	</head>
 	<body ng-app="nh0815">
-		<div class="container">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#/about" id="about">Nick Hirakawa</a></li>
-						<li><a href="#/resume" id="resume"><i class="fa fa-file-text-o"></i> Résumé</a></li>
-						<li><a href="https://github.com/nh0815?tab=repositories"><i class="fa fa-github"></i> GitHub</a></li>
-						<li><a href="mailto:nh0815@gmail.com"><i class="fa fa-envelope-o"></i> Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#/about" id="about">Nick Hirakawa</a></li>
+					<li><a href="#/resume" id="resume"><i class="fa fa-file-text-o"></i> Résumé</a></li>
+					<li><a href="https://github.com/nh0815?tab=repositories"><i class="fa fa-github"></i> GitHub</a></li>
+					<li><a href="mailto:nh0815@gmail.com"><i class="fa fa-envelope-o"></i> Contact</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div ng-view class="view-animate"></div>
 		<footer><h4>&copy; 2015 Nick Hirakawa</h4></footer>
 	</body>
