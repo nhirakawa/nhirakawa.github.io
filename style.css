@@ -126,34 +126,3 @@ div.view-container {
 }
 
 /* end resume*/
-
-/* footer */
-footer {
-	position:fixed;
-	bottom:0;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	float: none;
-	height: 40px;
-	text-align: center;
-	background-color: #222222;
-}
-
-footer h4{
-	color: #777777;
-}
-
-footer h4:hover{
-	cursor: default;
-	color: #ffffff
-}
-/* end footer */
-
-/* animations */
-
-.view-animate.ng-enter, .view-animate.ng-leave {
-
-}
-
-/* end animations */
