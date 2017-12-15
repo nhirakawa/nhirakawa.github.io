@@ -1,14 +1,10 @@
-*{
-	font-family: 'Lato', sans-serif;
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
-html{
-	height: 100%;
-}
-
-body{
-	height: 100%;
-	overflow: hidden;
+ul{
+	list-style: none;
+	padding-left: 0;
 }
 
 .left{
@@ -31,6 +27,11 @@ body{
 	font-style: italic;
 }
 
+.bordered {
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+}
+
 /* nav */
 
 nav	{
@@ -51,7 +52,7 @@ nav li{
 }
 
 nav li a{
-	font-size: 18pt;
+	font-size: 16pt;
 }
 
 i.fa{
@@ -97,32 +98,12 @@ div.view-container {
 /* resume */
 
 #resume-content{
-	overflow-y: auto;
-	max-height: 800px;
+	font-size: 14pt;
+	font-family: "Roboto Slap, serif";
 }
 
-#resume-content ul{
-	list-style: none;
-}
-
-#resume-content .list{
-	list-style: square;
-}
-
-#resume-content > ul > li{
-	clear: both;
-}
-
-#resume-content *{
-	font-family: 'Arvo', serif;
-}
-
-#resume-content > ul > li > ul *, #resume-content > ul > li > div *{
-	font-size: 13pt;
-}
-
-#resume-content > ul > li > div > div:last-child{
-	margin-bottom: 25px;
+#work-experience > div {
+	margin-top: 25px;
 }
 
 /* end resume*/
